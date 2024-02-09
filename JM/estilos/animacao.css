@@ -1,0 +1,71 @@
+@charset "ut-f8";
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes sumir {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer_logo_texto {
+    from {
+        margin-left: -40px;
+        z-index: 0;
+    }
+
+    to {
+        margin-left: 0px;
+        z-index: 0;
+    }
+}
+
+@keyframes aparecer_menu_fantasma {
+    from{
+        width: 0vw;
+        height: 0px;
+    }
+
+    to {
+        width: 60vw;
+        height: 400px;
+    }
+}
+
+@keyframes aparecer_menu_fantasma_600 {
+    from{
+        width: 0vw;
+        height: 0px;
+    }
+
+    to {
+        width: 60vw;
+        height: 600px;
+    }
+}
+
+@keyframes sumir_menu_fantasma {
+    from{
+        top: 5px;
+        right: 5px;
+    }
+
+    to {
+        width: 0vw;
+        height: 0px;
+        top: 28px;
+        right: 18px;
+    }
+}

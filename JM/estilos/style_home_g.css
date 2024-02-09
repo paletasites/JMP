@@ -1,0 +1,59 @@
+@charset "ut-f8";
+
+@media screen and (min-width: 768px) {
+    .roupa {
+        max-width: 220px;
+        height: 320px;
+    }
+
+    .fundo {
+        height: 620px;
+        top: 60%;
+    }
+
+    .autidor {
+        margin-top: 150px;
+    }
+
+    .section_criar_blusas {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .roupa {
+        margin: 0px 60px;
+    }
+
+    .titulo_roupa {
+        margin: 80px 0px 50px 0px;
+    }
+
+    .mostrar_pouco {
+        height: 150px;
+    }
+
+    .texto_do_cab {
+        margin: 80px 0px 0px 50px;
+    }
+
+    .logo {
+        margin: 0px 0px 0px 50px;
+    }
+
+    nav {
+        margin: 0px 20px 0px 0px;
+    }
+
+    .sair_fantasma {
+        font-size: 2em;
+        top: 20px;
+        right: 20px;
+    }
+
+    .resposta {
+        max-width: 400px;
+        margin: 15px 20px 0px 150px;
+    }
+
+}

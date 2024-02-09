@@ -1,0 +1,108 @@
+@charset "ut-f8";
+
+:root {
+    --cor_000: #D4C2AD;
+    --cor_001: #D7A184;
+    --cor_002: #EFDFCC;
+    --cor_003: #ba8e7a;
+    --cor_004: #66796B;
+    --cor_005: #9e7955;
+    --cor_006: #4f6264d9;
+}
+
+
+.carrosel_img_produto_exclusivo {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrosel {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_carrosel {
+    width: 80%;
+    height: 80px;
+    background-color: var(--cor_003);
+    margin: 10px 0px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.217);
+}
+
+.img_carrosel > img {
+    width: 100%;
+    height: 100%;
+}
+
+.img_principal {
+    width: 250px;
+    height: 250px;
+    background-color: var(--cor_001);
+}
+
+.preco_produto_exclusivo {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0px 0px 0px 50px;
+}
+
+.sifrao {
+    font-size: 1.3em;
+}
+
+.preco {
+    font-size: 2em;
+}
+
+.desc_exclusivo {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    margin: 20px 0px 0px 50px;
+}
+
+.desc_exclusivo > p {
+    width: 80vw;
+    font-size: 1.3em;
+    opacity: 0.8;
+    font-family: "texto";
+}
+
+.botao_comprar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.botao_comprar > button {
+    background-color: rgb(255, 200, 0);
+}
+
+button {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    font-family: "texto";
+}
+
+.botao_carrinho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.botao_carrinho > button {
+    background-color: rgb(255, 174, 0);
+}
