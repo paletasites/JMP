@@ -1,9 +1,6 @@
 @charset "ut-f8";
 
 @media screen and (min-width: 1200px) {
-    .break {
-        flex-basis: 100%;
-    }
 
     .roupas_002 {
         height: 750px;
@@ -45,5 +42,14 @@
         justify-content: start;
         align-items: start;
         padding: 20px 0px 0px 20px;
+    }
+
+    .popap {
+        width: 500px;
+        height: 500px;
+    }
+
+    .contem_img_popap {
+        height: 350px;
     }
 }

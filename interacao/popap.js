@@ -26,3 +26,18 @@ if(Cookies.get("pode_ir")){
     bodi.style.overflow = "hidden"
 }
 
+var botao_pulo = document.querySelector("pular_cont")
+var imagem_popap = document.getElementById("imagem_do_popap")
+var texto = document.getElementById("texto_do_popap")
+var botao = document.querySelectorAll("contem_button_popap")
+
+function pular () {
+    /*console.log("pulei a primeira sessoa do popap :)")
+    imagem_popap.src = "../midia/img/foto003.jpeg"
+    console.log("mudei a imagem")
+    texto.style.display = "none"
+    console.log("texto oculto")
+    // botao.style.display = "none"
+    console.log("botao sumiu")*/
+    console.log("ola mundo")
+}

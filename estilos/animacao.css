@@ -69,3 +69,15 @@
         right: 18px;
     }
 }
+
+@keyframes mause_cursor {
+    from {
+        bottom: -50px;
+        right: 25%;
+    }
+
+    to {
+        bottom: -35px;
+        right: 35%;
+    }
+}

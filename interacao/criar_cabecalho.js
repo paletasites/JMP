@@ -17,7 +17,7 @@ const cabecalho = `
 
     <div class="menu_fantasma" id="fantasma">
         <div class="casca,center_001" id="casca">
-            <div class="sair_fantasma" onclick="sumir_fantasma()">X</div>
+            <div class="sair_fantasma" onclick="sumir_fantasma()">x</div>
             <div class="lista" id="lista_001">
                 <ul>
                     <a href="index.php">

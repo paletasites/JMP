@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-
-<?php 
-    include('popap.php');
-?>
-
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -20,10 +15,28 @@
     <title>JM</title>
 </head>
 <body id="bodi">
-    <div class="fundo_transparente" id="fundo_transparente"></div>
+    <div class="fundo_transparente" id="fundo_transparente" onclick="sair_do_popap()"></div>
     <div class="popap" id="popap">
         <div class="ocupar_popap">
-            <div class="sair_popap" id="sair_popap" onclick="sair_do_popap()">X</div>
+            <div class="sair_popap" id="sair_popap" onclick="sair_do_popap()">x</div>
+            <div class="conteudo">
+                <div class="pular_cont" onclick="pular()">
+                    ->
+                </div>
+                <div class="contem_img_popap">
+                    <img src="../midia/img/foto001.jpeg" alt="" id="imagem_do_popap">
+                </div>
+                <div class="texto_popap" id="textopopap">
+                    <p id="texto_do_popap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, minima id nostrum sequi temporibus consectetur.</p>
+                </div>
+                <div class="contem_buttom_popap">
+                    <div class="botao_popap"><p>ter a minha</p></div>
+                    <div class="cursor_animacao_popap">
+                    <img src="../midia/icones/mause_cursor.png" alt="">
+                </div>
+                </div>
+                
+            </div>
         </div>
     </div>
     <header>
@@ -211,15 +224,15 @@
         </div>
     </footer>
 
-
+    
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="../interacao/popap.js"></script>
     <script src="../interacao/criar_cabecalho.js"></script>
     <script src="../interacao/aparecer_fantasma.js"></script>
     <script src="../interacao/redirecionamento.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="../interacao/popap.js"></script>
     <script src="../interacao/resposta.js"></script>
 </body>
 </html>
