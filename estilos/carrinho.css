@@ -46,7 +46,9 @@ button {
     margin: 20px 0px;
 }
 
-
+.ocupar_espaco {
+    width: 100%;
+}
 
 .produtos_escolhidos {
     width: 100%;

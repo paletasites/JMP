@@ -57,6 +57,7 @@
                 </div>
                 <div class="lixeira"></div>
             </div>
+            <div class="ocupar_espaco"></div>
             <div class="produto_carrinho">
                 <div class="imagem_do_produto">
                     <img src="../midia/img/foto003.jpeg" alt="">
@@ -82,6 +83,7 @@
                 
                 <div class="lixeira"></div>
             </div>
+            <div class="ocupar_espaco"></div>
             <div class="produto_carrinho">
                 <div class="imagem_do_produto">
                     <img src="../midia/img/foto004.jpeg" alt="">
@@ -107,6 +109,7 @@
                 
                 <div class="lixeira"></div>
             </div>
+            <div class="ocupar_espaco"></div>
             <div class="produto_carrinho">
                 <div class="imagem_do_produto">
                     <img src="../midia/img/foto005.jpeg" alt="">
@@ -132,6 +135,7 @@
                 
                 <div class="lixeira"></div>
             </div>
+            <div class="ocupar_espaco"></div>
             <div class="produto_carrinho">
                 <div class="imagem_do_produto">
                     <img src="../midia/img/foto006.jpeg" alt="">
