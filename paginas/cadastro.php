@@ -28,8 +28,7 @@
     }
 ?!-->
 
-    <div class="imagem_bonita">
-        <div class="botao_voltar" id="voltar" onclick="voltar_pag_anterior()"><img src="../midia/icones/voltar.png" alt=""></div>
+    <div class="imagem_bonita" id="botao_vai_aqui">
         <main>
             <div class="balao_cadastro">
                 <div class="contem_form">

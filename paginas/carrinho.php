@@ -15,6 +15,9 @@
     </style>
 </head>
 <body id="bodi">
+    <?php 
+        include("../interacao/calculo_carrinho.php")
+    ?>
     <main>
         <div class="mostrar_pouco"></div>
         <section class="carrinho">
@@ -25,7 +28,7 @@
                 <div class="info_finalizar">total :</div>
                 <div class="preco_da_roupa">
                         <div class="sifrao">R$</div>
-                        <div class="valor">1200,00</div>
+                        <div class="valor"><?=$preco_total_formatado?></div>
                 </div>
                 <div class="botton_finalizar">
                     <button>finalizar compra</button>
@@ -219,5 +222,6 @@
 
     <script src="../interacao/criar_cabecalho.js"></script>
     <script src="../interacao/aparecer_fantasma.js"></script>
+    <script src="../interacao/voltar.js"></script>
 </body>
 </html>

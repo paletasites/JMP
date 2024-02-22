@@ -9,6 +9,9 @@ const cabecalho = `
             </div>
             <div class="contem_nav" onclick="aparecer_fantasma()">
                 <nav>
+                    <a href="carrinho.php">
+                        <div class="carrinho_do_cab"></div>
+                    </a>
                     <img src="../midia/icones/icone_menu.png" alt="">
                 </nav>
             </div>
