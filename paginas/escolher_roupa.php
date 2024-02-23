@@ -6,7 +6,7 @@
     <title>JM - criar roupas</title>
     <link rel="shortcut icon" href="../midia/img/logo-desenho.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/animacao.css">
-    <link rel="stylesheet" href="../estilos/criacao.css">
+    <link rel="stylesheet" href="../estilos/escolher.css">
 </head>
 <body id="bodi">
     
