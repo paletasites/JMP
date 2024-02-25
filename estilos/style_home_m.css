@@ -14,7 +14,7 @@
 
     .menu_fantasma {
         height: 550px;
-        max-width: 600px;
+        max-width: 300px;
     }
 
     .autidor {
@@ -54,7 +54,7 @@
 
     .roupa {
         max-width: 200px;
-        height: 300px;
+        height: 80%;
     }
 
     .fundo {

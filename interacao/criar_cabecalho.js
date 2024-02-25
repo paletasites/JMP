@@ -7,13 +7,17 @@ const cabecalho = `
                 <img src="../midia/img/logo-desenho.png" alt="asd">
                 <p class="titulo_logo">JM</p>
             </div>
-            <div class="contem_nav" onclick="aparecer_fantasma()">
-                <nav>
-                    <a href="carrinho.php">
-                        <div class="carrinho_do_cab"></div>
-                    </a>
-                    <img src="../midia/icones/icone_menu.png" alt="">
-                </nav>
+            <div class="contem_navegacao">
+                <div class="contem_nav" onclick="ircarrinho()" id="carrinho">
+                    <nav>
+                        <img src="../midia/icones/carrinho.png" alt="">
+                    </nav>
+                </div>
+                <div class="contem_nav" onclick="aparecer_fantasma()" id="menu">
+                    <nav>
+                        <img src="../midia/icones/icone_menu.png" alt="">
+                    </nav>
+                </div>
             </div>
         </section>
     </header>
@@ -37,15 +41,6 @@ const cabecalho = `
                     </a>
                     <a href="forma.php" onclick="document.cookie='produto = caneca'">
                         <li>canecas</li>
-                    </a>
-                    <a href="forma.php" onclick="document.cookie='produto = posters'">
-                        <li>posters</li>
-                    </a>
-                    <a href="forma.php" onclick="document.cookie='produto = bolsas'">
-                        <li>bolsas</li>
-                    </a>
-                    <a href="forma.php" onclick="document.cookie='produto = aventais'">
-                        <li>aventais</li>
                     </a>
                 </ul>
             </div>

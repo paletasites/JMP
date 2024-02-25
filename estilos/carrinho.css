@@ -25,6 +25,7 @@
 
 .conteudo_finalizar {
     width: 80%;
+    max-width: 400px;
     height: 80%;
     overflow: hidden;
     display: flex;
@@ -60,7 +61,7 @@ button {
 
 .produto_carrinho {
     width: 80%;
-    max-width: 500px;
+    max-width: 400px;
     height: 100px;
     background-color: white;
     border-radius: 20px;

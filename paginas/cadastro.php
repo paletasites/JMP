@@ -7,7 +7,7 @@
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="../estilos/cadastro.css">
 </head>
-<body>
+<body id="bodi">
 
 <!--?php 
     session_start();

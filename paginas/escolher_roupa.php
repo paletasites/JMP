@@ -10,51 +10,41 @@
 </head>
 <body id="bodi">
     
-    <header>
-        <section class="contem_logotitulo">
-            <div class="logo"></div>
-            <div class="titulo_titulo"><h1>JM</h1></div>
-        </section>
-    </header>
-
-    <main>
-        <section class="enunciado">
-            <div class="titulo">
-                <h1>ESCOLHA O PRODUTO</h1>
-            </div>
-        </section>
-        <section class="escolher_blusa" id="escolher_blusa">
-            <div class="produto" onclick="criar_blusa()">
-                <img src="../midia/img/foto001.jpeg" alt="">
-            </div>
-            <div class="produto" onclick="criar_bone()">
-                <img src="../midia/img/bone_meio.png" alt="">
-            </div>
-            <div class="produto" onclick="criar_regata()">
-                <img src="../midia/img/bone_meio.png" alt="">
-            </div>
-            <div class="produto" onclick="criar_moleton()">
-                <img src="../midia/img/bone_meio.png" alt="">
-            </div>
-            <div class="produto" onclick="criar_caneca()">
-                <img src="../midia/img/caneca_meio.png" alt="">
-            </div>
-            <div class="produto" onclick="criar_poster()">
-                <img src="../midia/img/bone_meio.png" alt="">
-            </div>
-            <div class="produto" onclick="criar_bolsa()">
-                <img src="../midia/img/bone_meio.png" alt="">
-            </div>
-            <div class="produto" onclick="criar_avental()">
-                <img src="../midia/img/bone_meio.png" alt="">
-            </div>
-        </section>
-
-
-        <section class="mostrar_tantao"></section>
-    </main>
+    <div class="centralizar">
+        <header>
+            <section class="contem_logotitulo">
+                <div class="logo"></div>
+                <div class="titulo_titulo"><h1>JM</h1></div>
+            </section>
+        </header>
+        <main>
+            <section class="enunciado">
+                <div class="titulo">
+                    <h1>ESCOLHA O PRODUTO</h1>
+                </div>
+            </section>
+            <section class="escolher_blusa" id="escolher_blusa">
+                <div class="produto" onclick="criar_blusa()">
+                    <img src="../midia/img/camisa_branca.png" alt="">
+                </div>
+                <div class="produto" onclick="criar_bone()">
+                    <img src="../midia/img/bone_preto.png" alt="">
+                </div>
+                <div class="produto" onclick="criar_regata()">
+                    <img src="../midia/img/regata_preta.png" alt="">
+                </div>
+                <div class="produto" onclick="criar_moleton()">
+                    <img src="../midia/img/moleton_branco.png" alt="">
+                </div>
+                <div class="produto" onclick="criar_caneca()">
+                    <img src="../midia/img/caneca_meio.png" alt="">
+                </div>
+            </section>
+        </main>
+    </div>
 
 
     <script src="../interacao/voltar.js"></script>
+    <script src="../interacao/mandar_criar.js"></script>
 </body>
 </html>

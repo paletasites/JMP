@@ -12,6 +12,10 @@
         .suposto_botao {
             display: none;
         }
+
+        #menu , #carrinho {
+            display: none;
+        }
     </style>
 </head>
 <body id="bodi">
@@ -164,6 +168,7 @@
                 
                 <div class="lixeira"></div>
             </div>
+            <div class="ocupar_espaco"></div>
             <div class="produto_carrinho">
                 <div class="imagem_do_produto">
                     <img src="../midia/img/foto007.jpeg" alt="">
@@ -189,6 +194,7 @@
                 
                 <div class="lixeira"></div>
             </div>
+            <div class="ocupar_espaco"></div>
             <div class="produto_carrinho">
                 <div class="imagem_do_produto">
                     <img src="../midia/img/foto008.jpeg" alt="">

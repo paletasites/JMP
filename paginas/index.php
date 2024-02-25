@@ -20,7 +20,7 @@
         <div class="ocupar_popap">
             <div class="sair_popap" id="sair_popap" onclick="sair_do_popap()">x</div>
             <div class="conteudo">
-                <div class="pular_cont" onclick="pular()">
+                <div class="pular_cont" id="pular_cont" onclick="pular()">
                     ->
                 </div>
                 <div class="contem_img_popap">
@@ -29,7 +29,7 @@
                 <div class="texto_popap" id="textopopap">
                     <p id="texto_do_popap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, minima id nostrum sequi temporibus consectetur.</p>
                 </div>
-                <div class="contem_buttom_popap">
+                <div class="contem_buttom_popap" id="contem_buttom_popap">
                     <div class="botao_popap"><p>ter a minha</p></div>
                     <div class="cursor_animacao_popap">
                     <img src="../midia/icones/mause_cursor.png" alt="">
@@ -103,9 +103,6 @@
                     </div>
                 </div>
             </div>
-            <div class="ver_mais">
-                <a href="#">ver mais</a>
-            </div>
         </section>
         <section>
             <a href="#">
@@ -152,7 +149,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="break"></div>
                 <div class="roupa" id="roupa004">
                     <div class="roupa_img">
                         <img src="../midia/img/foto007.jpeg" alt="sfhdfh">
@@ -195,7 +191,7 @@
             <div class="info_blusa">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at quo sapiente, similique nihil odio velit. Facere, quia quibusdam. Ratione eum, consectetur blanditiis iste sit assumenda inventore autem vitae quod.</p>
                 <div class="contem_button">
-                    <a href="#">
+                    <a href="escolher_roupa.php">
                         <button>ter a minha</button>
                     </a>
                 </div>
@@ -234,5 +230,10 @@
         AOS.init();
     </script>
     <script src="../interacao/resposta.js"></script>
+    <script>
+        function ircarrinho(){
+            window.location.href = "carrinho.php"
+        }
+    </script>
 </body>
 </html>

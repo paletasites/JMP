@@ -81,3 +81,15 @@
         right: 35%;
     }
 }
+
+@keyframes aparecer_produto {
+    from {
+        margin-left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 80px;
+        opacity: 1;
+    }
+}
