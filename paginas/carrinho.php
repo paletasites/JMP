@@ -84,6 +84,8 @@
             if($qual_produto < count($carrinho)){
                 $carrinho[$qual_produto][0] ++;
             };
+            // localhost.setItem("qual_produto",$qual_produto);
+            // Pegar com localhost.getItem("qual_produto");
         };
 
         if(isset($_GET["diminuir"])){
