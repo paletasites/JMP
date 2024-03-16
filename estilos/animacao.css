@@ -93,3 +93,14 @@
         opacity: 1;
     }
 }
+
+@keyframes tirar_produto {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        margin-right: -200px;
+    }
+}

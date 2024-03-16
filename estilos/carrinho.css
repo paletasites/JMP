@@ -69,6 +69,7 @@ button {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.371);
     display: flex;
     position: relative;
+    animation: tirar_produto 1s;
 }
 
 .imagem_do_produto {

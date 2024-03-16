@@ -19,9 +19,6 @@
     </style>
 </head>
 <body id="bodi">
-    <?php 
-        include("../interacao/calculo_carrinho.php")
-    ?>
     <main>
         <div class="mostrar_pouco"></div>
         <section class="carrinho">
@@ -32,202 +29,148 @@
                 <div class="info_finalizar">total :</div>
                 <div class="preco_da_roupa">
                         <div class="sifrao">R$</div>
-                        <div class="valor"><?=$preco_total_formatado?></div>
+                        <div class="valor" id="valor"></div>
                 </div>
                 <div class="botton_finalizar">
                     <button>finalizar compra</button>
                 </div>
             </div>
         </section>
-        <section class="produtos_escolhidos">
-            <div class="produto_carrinho">
+
+    <?php 
+    
+        $carrinho = [
+            [
+                1,
+                'camiseta branca',
+                68.00,
+                false,
+                '../midia/img/foto003.jpeg'
+            ],
+            [
+                1,
+                'camiseta preta',
+                65.00,
+                10.00,
+                '../midia/img/foto005.jpeg'
+            ],
+            [
+                2,
+                'camiseta beje',
+                63.00,
+                false,
+                '../midia/img/foto006.jpeg'
+            ],
+            [
+                2,
+                'urso fofo',
+                62.00,
+                false,
+                '../midia/img/foto008.jpeg'
+            ]
+        ];
+
+        if(isset($_GET["remover"])){
+            $qual_produto = $_GET["remover"];
+            if($qual_produto < count($carrinho)){
+                $ultimo_produto = $carrinho[3];
+                unset($carrinho[$qual_produto]);
+                array_push($carrinho,$ultimo_produto);
+            };
+        };
+
+        if(isset($_GET["aumentar"])){
+            $qual_produto = $_GET["aumentar"];
+            if($qual_produto < count($carrinho)){
+                $carrinho[$qual_produto][0] ++;
+            };
+        };
+
+        if(isset($_GET["diminuir"])){
+            $qual_produto = $_GET["diminuir"];
+            if($qual_produto < count($carrinho)){
+                $carrinho[$qual_produto][0] --;
+            };
+        };
+
+        ?>
+
+    <section class="produtos_escolhidos">
+        <?php 
+
+        for($i=0;$i<count($carrinho); $i++){
+            if(isset($carrinho[$i])){
+
+                $quant = $carrinho[$i][0];
+                $nome = $carrinho[$i][1];
+                $preco = $carrinho[$i][2];
+                $desconto = $carrinho[$i][3];
+                $caminho = $carrinho[$i][4];
+        
+                echo '<div class="produto_carrinho" id="lista_prod_'.$i.'">
                 <div class="imagem_do_produto">
-                    <img src="../midia/img/foto001.jpeg" alt="">
+                    <img src="'.$caminho.'" alt="">
                 </div>
                 <div class="info_carrinho">
                     <div class="titulo_da_roupa">
-                        <h2>blusa branca</h2>
+                        <h2>'.$nome.'</h2>
                     </div>
                     <div class="preco_da_roupa">
                         <div class="sifrao">R$</div>
-                        <div class="valor">60,00</div>
+                        <div class="valor">'.$preco.'</div>
                     </div>
                 </div>
                 <div class="quantidade">
-                    <div class="seta_cima" onclick="adicionar()">
+                    <div class="seta_cima" onclick="aumentar('.$i.')">
                         <img src="../midia/icones/seta_cima.png" alt="">
                     </div>
-                    <div class="quant">1</div>
-                    <div class="seta_baixo" onclick="remover()">
+                    <div class="quant" id="quant">'.$quant.'</div>
+                    <div class="seta_baixo" onclick="diminuir('.$i.')">
                         <img src="../midia/icones/seta_baixo.png" alt="">
                     </div>
                 </div>
-                <div class="lixeira"></div>
-            </div>
-            <div class="ocupar_espaco"></div>
-            <div class="produto_carrinho">
-                <div class="imagem_do_produto">
-                    <img src="../midia/img/foto003.jpeg" alt="">
+                <div class="lixeira" onclick="remover('.$i.')"></div>
                 </div>
-                <div class="info_carrinho">
-                    <div class="titulo_da_roupa">
-                        <h2>blusa branca</h2>
-                    </div>
-                    <div class="preco_da_roupa">
-                        <div class="sifrao">R$</div>
-                        <div class="valor">63,00</div>
-                    </div>
-                </div>
-                <div class="quantidade">
-                    <div class="seta_cima" onclick="adicionar()">
-                        <img src="../midia/icones/seta_cima.png" alt="">
-                    </div>
-                    <div class="quant">1</div>
-                    <div class="seta_baixo" onclick="remover()">
-                        <img src="../midia/icones/seta_baixo.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="lixeira"></div>
-            </div>
-            <div class="ocupar_espaco"></div>
-            <div class="produto_carrinho">
-                <div class="imagem_do_produto">
-                    <img src="../midia/img/foto004.jpeg" alt="">
-                </div>
-                <div class="info_carrinho">
-                    <div class="titulo_da_roupa">
-                        <h2>blusa marron</h2>
-                    </div>
-                    <div class="preco_da_roupa">
-                        <div class="sifrao">R$</div>
-                        <div class="valor">58,00</div>
-                    </div>
-                </div>
-                <div class="quantidade">
-                    <div class="seta_cima" onclick="adicionar()">
-                        <img src="../midia/icones/seta_cima.png" alt="">
-                    </div>
-                    <div class="quant">1</div>
-                    <div class="seta_baixo" onclick="remover()">
-                        <img src="../midia/icones/seta_baixo.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="lixeira"></div>
-            </div>
-            <div class="ocupar_espaco"></div>
-            <div class="produto_carrinho">
-                <div class="imagem_do_produto">
-                    <img src="../midia/img/foto005.jpeg" alt="">
-                </div>
-                <div class="info_carrinho">
-                    <div class="titulo_da_roupa">
-                        <h2>urso ninja</h2>
-                    </div>
-                    <div class="preco_da_roupa">
-                        <div class="sifrao">R$</div>
-                        <div class="valor">65,00</div>
-                    </div>
-                </div>
-                <div class="quantidade">
-                    <div class="seta_cima" onclick="adicionar()">
-                        <img src="../midia/icones/seta_cima.png" alt="">
-                    </div>
-                    <div class="quant">1</div>
-                    <div class="seta_baixo" onclick="remover()">
-                        <img src="../midia/icones/seta_baixo.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="lixeira"></div>
-            </div>
-            <div class="ocupar_espaco"></div>
-            <div class="produto_carrinho">
-                <div class="imagem_do_produto">
-                    <img src="../midia/img/foto006.jpeg" alt="">
-                </div>
-                <div class="info_carrinho">
-                    <div class="titulo_da_roupa">
-                        <h2>duas caras</h2>
-                    </div>
-                    <div class="preco_da_roupa">
-                        <div class="sifrao">R$</div>
-                        <div class="valor">61,00</div>
-                    </div>
-                </div>
-                <div class="quantidade">
-                    <div class="seta_cima" onclick="adicionar()">
-                        <img src="../midia/icones/seta_cima.png" alt="">
-                    </div>
-                    <div class="quant">1</div>
-                    <div class="seta_baixo" onclick="remover()">
-                        <img src="../midia/icones/seta_baixo.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="lixeira"></div>
-            </div>
-            <div class="ocupar_espaco"></div>
-            <div class="produto_carrinho">
-                <div class="imagem_do_produto">
-                    <img src="../midia/img/foto007.jpeg" alt="">
-                </div>
-                <div class="info_carrinho">
-                    <div class="titulo_da_roupa">
-                        <h2>blusa beje</h2>
-                    </div>
-                    <div class="preco_da_roupa">
-                        <div class="sifrao">R$</div>
-                        <div class="valor">60,00</div>
-                    </div>
-                </div>
-                <div class="quantidade">
-                    <div class="seta_cima" onclick="adicionar()">
-                        <img src="../midia/icones/seta_cima.png" alt="">
-                    </div>
-                    <div class="quant">1</div>
-                    <div class="seta_baixo" onclick="remover()">
-                        <img src="../midia/icones/seta_baixo.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="lixeira"></div>
-            </div>
-            <div class="ocupar_espaco"></div>
-            <div class="produto_carrinho">
-                <div class="imagem_do_produto">
-                    <img src="../midia/img/foto008.jpeg" alt="">
-                </div>
-                <div class="info_carrinho">
-                    <div class="titulo_da_roupa">
-                        <h2>blusa branca</h2>
-                    </div>
-                    <div class="preco_da_roupa">
-                        <div class="sifrao">R$</div>
-                        <div class="valor">60,00</div>
-                    </div>
-                </div>
-                <div class="quantidade">
-                    <div class="seta_cima" onclick="adicionar()">
-                        <img src="../midia/icones/seta_cima.png" alt="">
-                    </div>
-                    <div class="quant">1</div>
-                    <div class="seta_baixo" onclick="remover()">
-                        <img src="../midia/icones/seta_baixo.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="lixeira"></div>
-            </div>
-        </section>
-        <div class="mostrar_tantao"></div>
+                <div class="ocupar_espaco"></div>';
+            };
+        };
+        ?>
+    </section>
+    <div class="mostrar_tantao"></div>
     </main>
 
+<?php 
+    $preco_total = 0;
+    for($i=0;$i<count($carrinho); $i++){
+        $preco = $carrinho[$i][2];
+        $preco_total += $preco;
+    };
+?>
+<script>
+    var total = document.getElementById("valor")
+    var preco_total = "<?php echo $preco_total?>"
+    total.innerText = preco_total
 
+    function remover (qual) {
+        var qual = qual
+        var caminho = window.location.href
 
+        window.location.href = caminho + "?&remover=" + qual
+    }
+
+    function aumentar (qual) {
+        var caminho = window.location.href
+        window.location.href = caminho + "?&aumentar=" + qual 
+    }
+
+    function diminuir (qual) {
+        var caminho = window.location.href
+        window.location.href = caminho + "?&diminuir=" + qual 
+    }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script src="../interacao/criar_cabecalho.js"></script>
     <script src="../interacao/aparecer_fantasma.js"></script>
-    <script src="../interacao/voltar.js"></script>
 </body>
 </html>
