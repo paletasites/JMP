@@ -104,3 +104,21 @@
         margin-right: -200px;
     }
 }
+
+@keyframes aparecer_quero {
+    from {
+        bottom: 50px;
+        top: 100%;
+        content: "";
+    }
+
+    80% {
+        content: "quero ver";
+    }
+
+    to {
+        top: 50%;
+        bottom: 0px;
+        content: "quero ver";
+    }
+}

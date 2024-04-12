@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM</title>
+    <link rel="shortcut icon" href="../midia/img/logo-desenho.png" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/index_p.css">
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/animacao.css">
+</head>
+<body id="bodi">
+    <header id="cab_vdd">
+        <div class="cab_comum">
+            <div class="logo_jm">
+                <img src="../midia/img/logo-desenho.png" alt="imagem da logo">
+                <h1>JM</h1>
+            </div>
+            <div class="navegacao">
+                <nav>
+                    <div class="carrinho">
+                        <img src="../midia/icones/carrinho.png" alt="carrinho" onclick="transferir('carrinho.php')">
+                    </div>
+                    <div class="menu" id="menu" onclick="menu()">
+                        <img src="../midia/icones/icone_menu.png" alt="menu">
+                    </div>
+                    <div class="casca_menu" id="casca_menu">
+                        <div class="sair_menu" id="sair_menu" onclick="menu()"><div>X</div></div>
+                        <div class="lista_menu_produtos" id="produtos_menu">
+                            <ul>
+                                <li onclick="lista_menu(1)">camisa</li>
+                                <li onclick="lista_menu(2)">moleton</li>
+                                <li onclick="lista_menu(3)">regata</li>
+                                <li onclick="lista_menu(4)">bone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="cab_unico"></div>
+    </header>
+
+    <main>
+        <section class="mais_vendidos">
+            <div class="titulo">
+                <h2>+ vendidos</h2>
+            </div>
+            <section class="roupas_vendidos">
+                <div class="roupa">
+                    <div class="conteudo">
+                        <div class="roupa_imagem">
+                            <img src="../midia/img/foto001.jpeg" alt="blusa">
+                        </div>
+                        <div class="info">
+                            <div class="roupa_nome">
+                                <h3>blusa azul</h3>
+                            </div>
+                            <div class="roupa_preco">
+                                <div class="sifrao">R$</div>
+                                <div class="preco">60.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roupa">
+                    <div class="conteudo">
+                        <div class="roupa_imagem">
+                            <img src="../midia/img/foto001.jpeg" alt="blusa">
+                        </div>
+                        <div class="info">
+                            <div class="roupa_nome">
+                                <h3>blusa azul</h3>
+                            </div>
+                            <div class="roupa_preco">
+                                <div class="sifrao">R$</div>
+                                <div class="preco">60.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roupa">
+                    <div class="conteudo">
+                        <div class="roupa_imagem">
+                            <img src="../midia/img/foto001.jpeg" alt="blusa">
+                        </div>
+                        <div class="info">
+                            <div class="roupa_nome">
+                                <h3>blusa azul</h3>
+                            </div>
+                            <div class="roupa_preco">
+                                <div class="sifrao">R$</div>
+                                <div class="preco">60.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roupa">
+                    <div class="conteudo">
+                        <div class="roupa_imagem">
+                            <img src="../midia/img/foto001.jpeg" alt="blusa">
+                        </div>
+                        <div class="info">
+                            <div class="roupa_nome">
+                                <h3>blusa azul</h3>
+                            </div>
+                            <div class="roupa_preco">
+                                <div class="sifrao">R$</div>
+                                <div class="preco">60.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roupa">
+                    <div class="conteudo">
+                        <div class="roupa_imagem">
+                            <img src="../midia/img/foto001.jpeg" alt="blusa">
+                        </div>
+                        <div class="info">
+                            <div class="roupa_nome">
+                                <h3>blusa azul</h3>
+                            </div>
+                            <div class="roupa_preco">
+                                <div class="sifrao">R$</div>
+                                <div class="preco">60.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roupa">
+                    <div class="conteudo">
+                        <div class="roupa_imagem">
+                            <img src="../midia/img/foto001.jpeg" alt="blusa">
+                        </div>
+                        <div class="info">
+                            <div class="roupa_nome">
+                                <h3>blusa azul</h3>
+                            </div>
+                            <div class="roupa_preco">
+                                <div class="sifrao">R$</div>
+                                <div class="preco">60.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="espacar"></div>
+        <section class="fazer_minha">
+            <div class="titulo">
+                <h2>nossos produtos</h2>
+            </div>
+            <div class="nav_escolha">
+                <nav>
+                    <div class="dentro_nav_escolha">masculino</div>
+                    <div class="dentro_nav_escolha">feminino</div>
+                    <div class="dentro_nav_escolha">infantil</div>
+                    <div class="dentro_nav_escolha">gordos</div>
+                </nav>
+            </div>
+            <div class="quadro_escolha001">
+                <div class="lista_escolha">
+                    <div class="quadrado_escolha" onclick="clicou_quadro('1')" id="quadro01"><div class="texto001">blusa</div></div>
+                    <div class="quadrado_escolha" onclick="clicou_quadro('2')" id="quadro02"><div class="texto001">regata</div></div>
+                    <div class="quadrado_escolha" onclick="clicou_quadro('3')" id="quadro03"><div class="texto001">moleton</div></div>
+                    <div class="quadrado_escolha" onclick="clicou_quadro('4')" id="quadro04"><div class="texto001">caneca</div></div>
+                    <div class="quadrado_escolha" onclick="clicou_quadro('5')" id="quadro05"><div class="texto001">bone</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="autidor">
+            <div class="imagem_autidor"></div>
+            <div class="botao">
+                <button class="button">ver</button>
+            </div>
+        </section>
+        <div class="espacar"></div>
+        <div class="titulo">
+            <h2>personalize</h2>
+        </div>
+        <section class="criar_sua">
+            <div class="contem_info_criar">
+                <div class="imagem_criar">
+                    <img src="../midia/img/foto005.jpeg" alt="">
+                </div>
+                <div class="info_criar">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit est cumque id unde.</p>
+                </div>
+                <div class="botao_criar">
+                    <button id="criar">criar</button>
+                </div>
+            </div>
+        </section>
+        <div class="espacar"></div>
+        <div class="espacar"></div>
+        <section class="estampas">
+            <div class="titulo">
+                <h2>estampas</h2>
+            </div>
+            <div class="contem_lista_estampa">
+                <div class="lista_estampa">
+                    <div class="estampa" id="estampa001">
+                        <div class="contem_nome_estampa">
+                            <h3>urso nija</h3>
+                        </div>
+                        <div class="contem_img_estampa">
+                            <img src="../midia/img/foto005.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="estampa" id="estampa002">
+                        <div class="contem_nome_estampa">
+                            <h3>urso nija</h3>
+                        </div>
+                        <div class="contem_img_estampa">
+                            <img src="../midia/img/foto003.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="estampa" id="estampa003">
+                        <div class="contem_nome_estampa">
+                            <h3>urso nija</h3>
+                        </div>
+                        <div class="contem_img_estampa">
+                            <img src="../midia/img/foto008.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="estampa" id="estampa004">
+                        <div class="contem_nome_estampa">
+                            <h3>urso nija</h3>
+                        </div>
+                        <div class="contem_img_estampa">
+                            <img src="../midia/img/foto010.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function clicou_quadro () {
+            console.log("ola, vc quicou no quadro! aproveite o melhor da gente :)")
+        }
+
+        function transferir (caminho) {
+            window.location.href = caminho
+        }
+
+        function menu () {
+            var icone_menu = document.getElementById("menu")
+            var casca_menu = document.getElementById("casca_menu")
+            if(icone_menu.style.display != "none"){
+                icone_menu.style.display = "none"
+                casca_menu.style.display = "flex"
+            }else {
+                icone_menu.style.display = "block"
+                casca_menu.style.display = "none"
+            }
+        }
+
+        function lista_menu(qual) {
+            if(qual == 1){
+                console.log("vc quer uma camisa :)")
+            }if(qual == 2){
+                console.log("vc quer uma moleton :)")
+            }if(qual == 3){
+                console.log("vc quer uma regata :)")
+            }if(qual == 4){
+                console.log("vc quer uma bone :)")
+            }
+        }
+    </script>
+</body>
+</html>
