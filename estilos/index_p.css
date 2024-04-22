@@ -68,6 +68,15 @@ nav {
     justify-content: center;
     align-items: baseline;
     padding-top: 20px;
+    animation: aparecer_menu_fantasma 1s;
+}
+
+.interior {
+    /* display: none; */
+    opacity: 0;
+    animation: aparecer 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .sair_menu {
@@ -90,6 +99,7 @@ ul {
 
 li {
     margin: 10px 0px;
+    width: 100px;
 }
 
 .lista_menu_produtos {
@@ -101,8 +111,9 @@ li {
 .cab_unico {
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(to bottom, var(--cor_004), #4c5750);
+    background-color: var(--cor_004);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.297);
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.285));
 }
 
 /* secao de mais vendidos */
@@ -118,22 +129,16 @@ li {
     height: 60px;
 }
 
-.titulo {
-    width: 100%;
+.contem_roupas_vendidas {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.titulo > h2 {
-    font-size: 2em;
-    font-family: "a_mao";
 }
 
 .roupas_vendidos {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 700px;
 }
 
 .roupa {
@@ -166,6 +171,10 @@ li {
     margin: 50px 0px 0px 0px;
 }
 
+.dividir {
+    width: 100%;
+}
+
 .nav_escolha {
     width: 100%;
     display: flex;
@@ -190,6 +199,10 @@ li {
     border-radius: 20px;
 }
 
+.dentro_nav_escolha:hover {
+    background-color: rgb(193, 192, 192);
+}
+
 .quadro_escolha001 {
     margin: 50px 0px 0px 0px;
 }
@@ -204,7 +217,7 @@ li {
 .quadrado_escolha {
     width: 90px;
     height: 90px;
-    background-color: rgb(207, 207, 207);
+    background-color: var(--cor_000);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.22);
     margin: 10px;
     border-radius: 20px;
@@ -213,7 +226,7 @@ li {
     align-items: center;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 992px){
     
     .quadrado_escolha{
         background-position: center;
@@ -271,17 +284,26 @@ li {
     display: none;
 }
 
+.contem_autidor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .autidor {
+    max-width: 700px;
     width: 100%;
     height: 300px;
-    background-color: var(--cor_004);
     margin: 50px 0px 0px 0px;
+    background-color: var(--cor_004);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.203);
 }
 
 .botao {
     width: 100%;
     height: 100%;
     position: relative;
+    z-index: 2;
 }
 
 .button {
@@ -375,7 +397,7 @@ li {
 .contem_img_estampa:hover::after {
     content: "";
     display: block;
-    width: 150px;
+    width: 100%;
     position: absolute;
     background-color: var(--cor_001);
     animation: aparecer_quero 1s;
@@ -390,4 +412,208 @@ li {
     width: 100%;
     height: 100%;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.28);
+}
+
+.fundo_rodape {
+    width: 100%;
+    height: 400px;
+    background-color: var(--cor_000);
+}
+
+.paragrafo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+}
+
+.paragrafo > p {
+    width: 80%;
+}
+
+.contato {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0px 0px 0px 30px;
+}
+
+.titulo_contato {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    padding: 0px 0px 20px 15px;
+}
+
+.contem_contato {
+    margin: 5px 0px;
+}
+
+.watts > .contem_contato{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #19ca3de4;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.199);
+    margin: 0px 0px 0px -5px;
+    border-radius: 20px;
+}
+
+.contem_contato > img {
+    width: 30px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 20px;
+}
+
+@media screen and (min-width:600px) {
+    .roupa {
+        margin: 50px 10px 0px 10px;
+    }
+
+    .contem_img_estampa {
+        width: 200px;
+        height: 230px;
+    }
+
+    .lista_estampa {
+        margin: 30px 0px 200px 0px;
+    }
+
+    .paragrafo {
+        display: block;
+        margin: 0px 0px 0px 30px;
+    }
+
+    .paragrafo > p {
+        max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .casca_menu {
+        width: 300px;
+        height: 350px;
+    }
+
+    li {
+        font-size: 1.5em;
+        width: 200px;
+    }
+
+    .roupa_imagem {
+        width: 150px;
+    }
+
+    .espacar {
+        height: 160px;
+    }
+
+    #espacar003 {
+        display: none;
+    }
+
+    .lista_estampa {
+        margin: 0px 0px 200px 0px;
+    }
+
+    .estampa {
+        margin: 40px 0px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .cab_unico {
+        height: 550px;
+    }
+
+    .mais_vendidos {
+        margin: 150px 0px 0px 0px;
+    }
+
+    .contem_info_criar {
+        width: 400px;
+    }
+
+    .imagem_criar {
+        width: 200px;
+        height: 230px;
+    }
+
+    .lista_estampa {
+        margin: 0px 0px 300px 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .roupa_imagem {
+        width: 200px;
+    }
+
+    #espacar001 {
+        height: 300px;
+    }
+
+    .dentro_nav_escolha {
+        padding: 5px 15px;
+    }
+
+    .nav_escolha > nav {
+        max-width: 550px;
+    }
+
+    .quadrado_escolha {
+        width: 120px;
+        height: 120px;
+    }
+
+    .autidor {
+        max-width: 800px;
+        height: 400px;
+    }
+
+    .estampa {
+        margin: 40px 40px;
+        width: 250px;
+    }
+
+    .lista_estampa {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        margin: 0px 0px 300px 0px;
+    }
+
+    .paragrafo > p {
+        max-width: 600px;
+        font-size: 1.4em;
+        margin-left: 50px;
+    }
+
+    .watts > .contem_contato {
+        width: 250px;
+    }
+
+    .contem_contato {
+        font-size: 1.3em;
+    }
+
+    .contato {
+        padding: 0px 0px 0px 80px;
+    }
+
+    .contem_img_estampa {
+        width: 250px;
+        height: 280px;
+    }
 }

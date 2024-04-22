@@ -64,6 +64,13 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(223, 223, 223);
+}
+
+
 :root {
     --cor_000: #D4C2AD;
     --cor_001: #D7A184;
@@ -74,78 +81,105 @@
     --cor_006: #4f6264d9;
 }
 
-.suposto_botao {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(97, 216, 33);
-    background-image: url("../midia/icones/icone_watts.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    overflow: hidden;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 97;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-html , body {
-    background-color: rgb(240, 240, 240);
+.cab_comum {
     width: 100%;
-    height: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    background-color: #ffffff00;
+    z-index: 10;
 }
 
-.menu_fantasma {
-    width: 60vw;
-    height: 400px;
-    background-color: var(--cor_006);
+.logo_jm {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+}
+
+h1 {
+    font-family: "titulo";
+}
+
+.navegacao {
+    margin: 0px 10px 0px 0px;
+}
+
+nav {
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carrinho {
+    width: 25px;
+}
+
+.carrinho > img {
+    width: 100%;
+}
+
+.casca_menu {
+    width: 200px;
+    height: 300px;
+    background-color: var(--cor_000);
+    position: absolute;
+    top: 15px;
+    right: 15px;
     border-radius: 20px;
     display: none;
     justify-content: center;
-    align-items: center;
-    z-index: 12;
-    position: fixed;
-    top: 5px;
-    right: 5px;
-    backdrop-filter: blur(3px);
+    align-items: baseline;
+    padding-top: 20px;
+    animation: aparecer_menu_fantasma 1s;
 }
 
-.casca {
-    width: 100%;
-    height: 100%;
-    animation-delay: 0.2s;
-    position: relative;
+.interior {
+    /* display: none; */
+    opacity: 0;
+    animation: aparecer 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
-.center_001 {
+.sair_menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--cor_001);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.sair_fantasma {
-    width: 20px;
-    height: 20px;
     position: absolute;
     top: 10px;
     right: 10px;
-    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.147);
+}
+
+ul {
+    list-style-type: none;    
+}
+
+li {
+    margin: 10px 0px;
+    width: 100px;
+}
+
+.lista_menu_produtos {
+    width: 80%;
+}
+
+.titulo {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
-.invisivel {
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 11;
+.titulo > h2 {
+    font-size: 2em;
+    font-family: "a_mao";
 }

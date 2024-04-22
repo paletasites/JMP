@@ -5,6 +5,10 @@
         opacity: 0;
     }
 
+    20% {
+        opacity: 1;
+    }
+
     to {
         opacity: 1;
     }
@@ -13,6 +17,10 @@
 @keyframes sumir {
     from {
         opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
     }
 
     to {
@@ -34,74 +42,22 @@
 
 @keyframes aparecer_menu_fantasma {
     from{
-        width: 0vw;
+        width: 0px;
         height: 0px;
     }
 
-    to {
-        width: 60vw;
-        height: 400px;
-    }
-}
-
-@keyframes aparecer_menu_fantasma_600 {
-    from{
-        width: 0vw;
-        height: 0px;
-    }
-
-    to {
-        width: 60vw;
-        height: 600px;
-    }
 }
 
 @keyframes sumir_menu_fantasma {
-    from{
-        top: 5px;
-        right: 5px;
-    }
-
     to {
         width: 0vw;
         height: 0px;
-        top: 28px;
-        right: 18px;
-    }
-}
-
-@keyframes mause_cursor {
-    from {
-        bottom: -50px;
-        right: 25%;
     }
 
-    to {
-        bottom: -35px;
-        right: 35%;
-    }
-}
-
-@keyframes aparecer_produto {
-    from {
-        margin-left: 0px;
-        opacity: 0;
-    }
-
-    to {
-        margin-left: 80px;
-        opacity: 1;
-    }
-}
-
-@keyframes tirar_produto {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        margin-right: -200px;
+    100% {
+        width: 0px;
+        height: 0px;
+        /* display: none; */
     }
 }
 
