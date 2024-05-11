@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM - pagamento</title>
+    <link rel="shortcut icon" href="../midia/img/logo-desenho.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/animacao.css">
+    <link rel="stylesheet" href="../estilos/pagamento.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <section class="voltar" onclick="transferir('carrinho.html')"><p><span class="material-symbols-outlined">
+        arrow_back
+        </span></p></section>
+
+    <main>
+        <section class="form_pagar">
+            <section class="logo_diferente">
+                <div class="logo_jm_diferente">
+                    <img src="../midia/img/logo-desenho.png" alt="imagem da logo">
+                    <h1>JM</h1>
+                </div>
+            </section>
+            <form action="cadastro.php" method="post">
+                <div class="nome">
+                    <label for="nome">nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="email">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="email_confirma">
+                    <label for="email_confirma">email</label>
+                    <input type="email" name="email_confirma" id="email_confirma">
+                </div>
+                <div class="cpf">
+                    <label for="cpf">cpf</label>
+                    <input type="password" name="cpf" id="cpf">
+                </div>
+                <div class="numero_cell">
+                    <label for="numero_cell">numero</label>
+                    <input type="text" name="numero_cell" id="numero_cell">
+                </div>
+            </form>
+            <section class="forma_pagamento">
+                <div class="lista_opcao">
+                    <div class="pix"></div>
+                    <div class="cartao"></div>
+                    <div class="boleto"></div>
+                </div>
+            </section>
+            <form action="cadastro.php" method="post">
+                <div class="emviar">
+                    <input type="submit" value="pagar">
+                </div>
+            </form>
+        </section>
+    </main>    
+
+    <script src="../interacao/criar_cabecalho.js"></script>
+    <script src="../interacao/interacao_global.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../midia/img/logo-desenho.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/animacao.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JM</title>
+</head>
+<body>
+    <header id="cab_vdd">
+        <section class=""></section>
+    </header>
+
+    <main>
+        <section class=""></section>
+    </main>
+
+
+    <script src="../interacao/criar_cabecalho.js"></script>
+    <script>
+        function menu () {
+        var icone_menu = document.getElementById("menu")
+        var casca_menu = document.getElementById("casca_menu")
+        var interior = document.getElementById("interior")
+        if(icone_menu.style.display != "none"){
+            icone_menu.style.display = "none"
+            casca_menu.style.display = "flex"
+            interior.style.display = "block"
+        }else {
+            icone_menu.style.display = "block"
+            casca_menu.style.display = "none"
+            interior.style.display = "none"
+        }
+    }
+    </script>
+</body>
+</html>

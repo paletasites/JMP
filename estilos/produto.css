@@ -1,0 +1,15 @@
+@charset "ut-f8";
+
+:root {
+    --cor_000: #d4c2ad;
+    --cor_001: #D7A184;
+    --cor_002: #EFDFCC;
+    --cor_003: #ba8e7ace;
+    --cor_004: #66796B;
+    --cor_005: #9e7955;
+    --cor_006: #4f6264d9;
+}
+
+.img_produto > img {
+    width: 200px;
+}
